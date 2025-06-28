@@ -15,7 +15,6 @@ var spinner = function () {
 };
 spinner(0);
 
-
 // Initialize Owl Carousel for Hero Section
 $(document).ready(function () {
   $(".header-carousel").owlCarousel({
@@ -294,3 +293,97 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+// DATE
+document.getElementById("year").textContent = new Date().getFullYear();
+
+//----------------------------------- blog slider -----------------------------------//
+
+  const carousel = document.querySelector(".blog-cards");
+  const cards = document.querySelectorAll(".blog-card");
+  const cardWidth = 350 + 30; // card width + margin
+  let currentIndex = 0;
+  let autoSlideInterval;
+
+  // --- Setup Carousel Width for Infinite Loop ---
+  const totalCards = cards.length;
+
+  // Clone first & last cards for infinite effect
+  const firstClone = cards[0].cloneNode(true);
+  const lastClone = cards[totalCards - 1].cloneNode(true);
+  carousel.appendChild(firstClone);
+  carousel.insertBefore(lastClone, cards[0]);
+
+  let scrollPosition = cardWidth;
+
+  // Initial transform (shift to real first)
+  carousel.style.transform = `translateX(-${scrollPosition}px)`;
+
+  // --- Slide to Index ---
+  function slideTo(index) {
+    scrollPosition = (index + 1) * cardWidth;
+    carousel.style.transition = "transform 0.5s ease-in-out";
+    carousel.style.transform = `translateX(-${scrollPosition}px)`;
+    currentIndex = index;
+  }
+
+  // --- Handle infinite loop when transition ends ---
+  carousel.addEventListener("transitionend", () => {
+    if (currentIndex >= totalCards) {
+      carousel.style.transition = "none";
+      currentIndex = 0;
+      scrollPosition = cardWidth;
+      carousel.style.transform = `translateX(-${scrollPosition}px)`;
+    }
+    if (currentIndex < 0) {
+      carousel.style.transition = "none";
+      currentIndex = totalCards - 1;
+      scrollPosition = totalCards * cardWidth;
+      carousel.style.transform = `translateX(-${scrollPosition}px)`;
+    }
+  });
+
+  // --- Next Button ---
+  document.getElementById("nextButton").addEventListener("click", () => {
+    slideTo(currentIndex + 1);
+    resetAutoplay();
+  });
+
+  // --- Prev Button (optional) ---
+  const prevButton = document.getElementById("prevButton");
+  if (prevButton) {
+    prevButton.addEventListener("click", () => {
+      slideTo(currentIndex - 1);
+      resetAutoplay();
+    });
+  }
+
+  carousel.addEventListener("mousedown", (e) => {
+    isDragging = true;
+    startX = e.clientX;
+    carousel.style.cursor = "grabbing";
+    clearInterval(autoSlideInterval);
+  });
+
+  window.addEventListener("mouseup", (e) => {
+    if (!isDragging) return;
+    isDragging = false;
+    carousel.style.cursor = "grab";
+    if (deltaX < -50) {
+      slideTo(currentIndex + 1);
+    } else if (deltaX > 50) {
+      slideTo(currentIndex - 1);
+    } else {
+      slideTo(currentIndex);
+    }
+    deltaX = 0;
+    startAutoplay();
+  });
+
+  window.addEventListener("mousemove", (e) => {
+    if (!isDragging) return;
+    deltaX = e.clientX - startX;
+    carousel.style.transform = `translateX(-${scrollPosition - deltaX}px)`;
+  });
+
+  
