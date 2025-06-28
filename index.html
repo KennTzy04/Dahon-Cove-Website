@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dahon Cove Resort</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    
+</head>
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid nav-bar sticky-top px-4 py-2 py-lg-0">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="#" class="navbar-brand d-flex align-items-center gap-2 p-0">
+                <img src="img/icons/Dahon Cove Resort 2 logo only.png" alt="Logo" style="height: 50px;">
+                <h1 class="display-6 mb-0 d-flex align-items-center"> 
+                    <i class="fas fa-palm-tree"></i> Dahon Cove Resort
+                </h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-auto py-0">
+                    <a href="#home" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="#services" class="nav-item nav-link">Services</a>
+                    <a href="#gallery" class="nav-item nav-link">Gallery</a>
+                    <a href="#packages" class="nav-item nav-link">Packages</a>
+                    
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Pages</a>
+                        <div class="dropdown-menu m-0">
+                          <a href="#booking" class="dropdown-item">Booking</a>
+                          <a href="#attractions" class="dropdown-item">Attractions</a>
+                          <a href="#testimonials" class="dropdown-item">Testimonials</a>
+                          <a href="#team" class="dropdown-item">Team</a>
+                          <a href="#blog" class="dropdown-item">Blog</a>
+                          <a href="#faq" class="dropdown-item">FAQ</a>
+                          <a href="#privacy" class="dropdown-item">Privacy Policy</a>
+                          <a href="#terms" class="dropdown-item">Terms of Service</a>
+                        </div>
+                      </div>
+
+                    <a href="#contact" class="nav-item nav-link">Contact</a>
+                </div>
+                <div class="team-icon d-none d-xl-flex justify-content-center me-3">
+                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <a href="#" class="btn btn-primary rounded-pill py-2 px-4 flex-shrink-0">Get Started</a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Hero Section with Carousel -->
+    <section id="home" class="hero-carousel-section">
+        <!-- Owl Carousel Hero Section -->
+        <div class="header-carousel owl-carousel">
+
+        <!-- Slide 1 -->
+        <div class="header-carousel-item animate__animated position-relative">
+            <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" class="img-fluid w-100" alt="Dahon Cove Resort Beach">
+            <div class="carousel-caption d-flex align-items-center justify-content-center text-center">
+            <div class="container">
+                <h5 class="text-white text-uppercase mb-3 fw-semibold">Escape to Paradise</h5>
+                <h1 class="display-3 text-white fw-bold mb-4">Welcome to <span class="highlight">Dahon Cove Resort</span></h1>
+                <p class="text-white mb-4 fs-5">
+                Experience luxury, tranquility, and adventure in our tropical paradise. 
+                Where every moment becomes a cherished memory.
+                </p>
+                <a href="#packages" class="btn btn-primary px-5 py-3 rounded-pill fw-bold">Book Your Stay</a>
+            </div>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="header-carousel-item animate__animated position-relative">
+            <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" class="img-fluid w-100" alt="Luxury Resort Pool">
+            <div class="carousel-caption d-flex align-items-center justify-content-center text-center">
+            <div class="container">
+                <h5 class="text-white text-uppercase mb-3 fw-semibold">Luxury Accommodations</h5>
+                <h1 class="display-3 text-white fw-bold mb-4">Your Perfect Tropical Getaway</h1>
+                <p class="text-white mb-4 fs-5">
+                Discover unforgettable adventures, breathtaking sights, and personalized experiences with us.
+                </p>
+                <a href="#packages" class="btn btn-primary px-5 py-3 rounded-pill fw-bold">Explore Packages</a>
+            </div>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="header-carousel-item animate__animated position-relative">
+            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" class="img-fluid w-100" alt="Resort Activities">
+            <div class="carousel-caption d-flex align-items-center justify-content-center text-center">
+            <div class="container">
+                <h5 class="text-white text-uppercase mb-3 fw-semibold">Adventure Awaits</h5>
+                <h1 class="display-3 text-white fw-bold mb-4">Create Unforgettable Memories</h1>
+                <p class="text-white mb-4 fs-5">
+                From water sports to spa treatments, every moment at Dahon Cove Resort is designed for your enjoyment.
+                </p>
+                <a href="#services" class="btn btn-primary px-5 py-3 rounded-pill fw-bold">Discover Activities</a>
+            </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>About Dahon Cove Resort</h2>
+                <p>Discover our story and what makes us special</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Dahon Cove Resort">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+                
+                <div class="about-text" data-aos="fade-left">
+                    <h3>Your Perfect Tropical Getaway</h3>
+                    <p>Nestled along pristine beaches with crystal-clear waters, Dahon Cove Resort offers an unparalleled tropical experience. Our resort combines luxury accommodations with authentic island hospitality.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-umbrella-beach"></i>
+                            <div>
+                                <h4>Private Beach Access</h4>
+                                <p>Exclusive access to our pristine private beach</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <i class="fas fa-concierge-bell"></i>
+                            <div>
+                                <h4>24/7 Concierge</h4>
+                                <p>Round-the-clock service to meet your every need</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <i class="fas fa-spa"></i>
+                            <div>
+                                <h4>Luxury Spa</h4>
+                                <p>Rejuvenate your body and mind in our world-class spa</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Our Services</h2>
+                <p>Everything you need for the perfect vacation</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <h3>Luxury Accommodations</h3>
+                    <p>Spacious rooms and suites with ocean views, premium amenities, and personalized service.</p>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Fine Dining</h3>
+                    <p>World-class restaurants serving local and international cuisine with fresh, organic ingredients.</p>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-ship"></i>
+                    </div>
+                    <h3>Island Tours</h3>
+                    <p>Guided tours to explore hidden beaches, waterfalls, and local culture with expert guides.</p>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-swimming-pool"></i>
+                    </div>
+                    <h3>Water Activities</h3>
+                    <p>Snorkeling, diving, kayaking, and water sports in crystal-clear tropical waters.</p>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>Fitness Center</h3>
+                    <p>State-of-the-art gym equipment and personal training sessions with ocean views.</p>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-icon">
+                        <i class="fas fa-glass-cheers"></i>
+                    </div>
+                    <h3>Event Planning</h3>
+                    <p>Perfect venues for weddings, corporate events, and special celebrations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Gallery</h2>
+                <p>Explore the beauty of our resort</p>
+            </div>
+            
+            <div class="gallery-filters" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="rooms">Rooms</button>
+                <button class="filter-btn" data-filter="beach">Beach</button>
+                <button class="filter-btn" data-filter="dining">Dining</button>
+                <button class="filter-btn" data-filter="activities">Activities</button>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="rooms" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Luxury Room">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="beach" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Beach View">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="dining" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Restaurant">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="activities" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Water Sports">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="rooms" data-aos="zoom-in" data-aos-delay="500">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Suite">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="beach" data-aos="zoom-in" data-aos-delay="600">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Sunset Beach">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Book Your Stay</h2>
+                <p>Reserve your perfect tropical getaway</p>
+            </div>
+            
+            <div class="booking-content">
+                <div class="booking-form" data-aos="fade-right">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="check-in">Check-in Date</label>
+                                <input type="date" id="check-in" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="check-out">Check-out Date</label>
+                                <input type="date" id="check-out" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="guests">Number of Guests</label>
+                                <select id="guests" required>
+                                    <option value="">Select guests</option>
+                                    <option value="1">1 Guest</option>
+                                    <option value="2">2 Guests</option>
+                                    <option value="3">3 Guests</option>
+                                    <option value="4">4 Guests</option>
+                                    <option value="5+">5+ Guests</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="room-type">Room Type</label>
+                                <select id="room-type" required>
+                                    <option value="">Select room type</option>
+                                    <option value="standard">Standard Room</option>
+                                    <option value="deluxe">Deluxe Room</option>
+                                    <option value="suite">Ocean Suite</option>
+                                    <option value="villa">Beach Villa</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="special-requests">Special Requests</label>
+                            <textarea id="special-requests" rows="3"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">Book Now</button>
+                    </form>
+                </div>
+                
+                <div class="booking-info" data-aos="fade-left">
+                    <div class="info-card">
+                        <h3>Why Book Direct?</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Best rate guarantee</li>
+                            <li><i class="fas fa-check"></i> Free cancellation up to 24 hours</li>
+                            <li><i class="fas fa-check"></i> Exclusive member benefits</li>
+                            <li><i class="fas fa-check"></i> Priority check-in</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3>Contact Information</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>reservations@dahoncove.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Tropical Paradise Island</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="packages">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Vacation Packages</h2>
+                <p>Choose the perfect package for your dream vacation</p>
+            </div>
+            
+            <div class="packages-grid">
+                <div class="package-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Romantic Getaway">
+                        <div class="package-badge">Popular</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Romantic Getaway</h3>
+                        <p>Perfect for couples seeking privacy and romance</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> 3 nights in Ocean Suite</li>
+                            <li><i class="fas fa-check"></i> Private beach dinner</li>
+                            <li><i class="fas fa-check"></i> Couples spa treatment</li>
+                            <li><i class="fas fa-check"></i> Sunset cruise</li>
+                        </ul>
+                        <div class="package-price">
+                            <span class="price">$1,299</span>
+                            <span class="per-night">per couple</span>
+                        </div>
+                        <button class="btn btn-primary">Book Package</button>
+                    </div>
+                </div>
+                
+                <div class="package-card featured" data-aos="fade-up" data-aos-delay="200">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Family Adventure">
+                        <div class="package-badge">Best Value</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Family Adventure</h3>
+                        <p>Fun-filled activities for the whole family</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> 5 nights in Beach Villa</li>
+                            <li><i class="fas fa-check"></i> All-inclusive meals</li>
+                            <li><i class="fas fa-check"></i> Kids club activities</li>
+                            <li><i class="fas fa-check"></i> Island tour included</li>
+                        </ul>
+                        <div class="package-price">
+                            <span class="price">$2,499</span>
+                            <span class="per-night">for family of 4</span>
+                        </div>
+                        <button class="btn btn-primary">Book Package</button>
+                    </div>
+                </div>
+                
+                <div class="package-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Adventure Seeker">
+                        <div class="package-badge">Adventure</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Adventure Seeker</h3>
+                        <p>Thrilling activities for adrenaline junkies</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> 4 nights in Deluxe Room</li>
+                            <li><i class="fas fa-check"></i> Scuba diving lessons</li>
+                            <li><i class="fas fa-check"></i> Zip-lining adventure</li>
+                            <li><i class="fas fa-check"></i> Hiking expeditions</li>
+                        </ul>
+                        <div class="package-price">
+                            <span class="price">$1,899</span>
+                            <span class="per-night">per person</span>
+                        </div>
+                        <button class="btn btn-primary">Book Package</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Attractions Section -->
+    <section id="attractions" class="attractions">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Nearby Attractions</h2>
+                <p>Explore the wonders around our resort</p>
+            </div>
+            
+            <div class="attractions-grid">
+                <div class="attraction-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="attraction-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Hidden Waterfall">
+                    </div>
+                    <div class="attraction-content">
+                        <h3>Hidden Waterfall</h3>
+                        <p>Discover a secluded waterfall surrounded by lush tropical vegetation.</p>
+                        <div class="attraction-details">
+                            <span><i class="fas fa-map-marker-alt"></i> 15 min drive</span>
+                            <span><i class="fas fa-clock"></i> 2-3 hours</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="attraction-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="attraction-image">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Coral Reef">
+                    </div>
+                    <div class="attraction-content">
+                        <h3>Coral Reef</h3>
+                        <p>Snorkel or dive in pristine coral reefs teeming with marine life.</p>
+                        <div class="attraction-details">
+                            <span><i class="fas fa-map-marker-alt"></i> 10 min boat ride</span>
+                            <span><i class="fas fa-clock"></i> 3-4 hours</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="attraction-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="attraction-image">
+                        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Local Market">
+                    </div>
+                    <div class="attraction-content">
+                        <h3>Local Market</h3>
+                        <p>Experience local culture and shop for authentic souvenirs and crafts.</p>
+                        <div class="attraction-details">
+                            <span><i class="fas fa-map-marker-alt"></i> 20 min drive</span>
+                            <span><i class="fas fa-clock"></i> 1-2 hours</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Guest Testimonials</h2>
+                <p>What our guests say about their experience</p>
+            </div>
+            
+            <div class="testimonials-slider" data-aos="fade-up">
+                <div class="testimonial active">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Absolutely breathtaking! The resort exceeded all our expectations. The staff was incredibly friendly and the facilities were top-notch. We can't wait to return!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Sarah Johnson">
+                            <div>
+                                <h4>Sarah Johnson</h4>
+                                <span>New York, USA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Perfect family vacation! Our kids loved the activities and we enjoyed the peaceful atmosphere. The food was amazing and the beach was pristine."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Michael Chen">
+                            <div>
+                                <h4>Michael Chen</h4>
+                                <span>Toronto, Canada</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The romantic getaway package was perfect for our anniversary. The private beach dinner was magical and the suite was luxurious. Highly recommend!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Emma Davis">
+                            <div>
+                                <h4>Emma Davis</h4>
+                                <span>London, UK</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-controls">
+                <button class="control-btn prev" id="prev-testimonial">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="testimonial-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+                <button class="control-btn next" id="next-testimonial">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Meet Our Team</h2>
+                <p>The dedicated professionals behind your perfect stay</p>
+            </div>
+            
+            <div class="team-grid">
+                <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="John Smith">
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>John Smith</h3>
+                        <span>General Manager</span>
+                        <p>With over 15 years of hospitality experience, John ensures every guest receives exceptional service.</p>
+                    </div>
+                </div>
+                
+                <div class="team-member" data-aos="fade-up" data-aos-delay="200">
+                    <div class="member-image">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Maria Garcia">
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Maria Garcia</h3>
+                        <span>Head Chef</span>
+                        <p>Maria brings her passion for local cuisine and international flavors to create unforgettable dining experiences.</p>
+                    </div>
+                </div>
+                
+                <div class="team-member" data-aos="fade-up" data-aos-delay="300">
+                    <div class="member-image">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="David Wilson">
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>David Wilson</h3>
+                        <span>Activities Director</span>
+                        <p>David coordinates all outdoor adventures and ensures guests have the most exciting and safe experiences.</p>
+                    </div>
+                </div>
+                
+                <div class="team-member" data-aos="fade-up" data-aos-delay="400">
+                    <div class="member-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Lisa Chen">
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Lisa Chen</h3>
+                        <span>Spa Manager</span>
+                        <p>Lisa oversees our luxury spa services, ensuring guests leave feeling rejuvenated and refreshed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Contact Us</h2>
+                <p>Get in touch with us for any inquiries</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Address</h3>
+                            <p>123 Paradise Beach Road<br>Tropical Paradise Island<br>TPI 12345</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Phone</h3>
+                            <p>+1 (555) 123-4567<br>+1 (555) 987-6543</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p>info@dahoncove.com<br>reservations@dahoncove.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Hours</h3>
+                            <p>Check-in: 3:00 PM<br>Check-out: 11:00 AM<br>24/7 Front Desk</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form" data-aos="fade-left">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="contact-map" data-aos="fade-up">
+                <div class="map-placeholder">
+                    <i class="fas fa-map"></i>
+                    <h3>Interactive Map</h3>
+                    <p>Map integration would go here</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-palm-tree"></i>
+                        <span>Dahon Cove Resort</span>
+                    </div>
+                    <p>Experience luxury, tranquility, and adventure in our tropical paradise. Where every moment becomes a cherished memory.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#packages">Packages</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#accommodation">Accommodation</a></li>
+                        <li><a href="#dining">Dining</a></li>
+                        <li><a href="#spa">Spa & Wellness</a></li>
+                        <li><a href="#activities">Activities</a></li>
+                        <li><a href="#events">Events</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for special offers and updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dahon Cove Resort. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="#cookies">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a> 
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- jQuery (required for Owl Carousel) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
